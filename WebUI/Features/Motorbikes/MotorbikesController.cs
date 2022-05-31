@@ -74,7 +74,7 @@ namespace WebUI.Features.Motorbikes
 
         [HttpDelete]
         [Route("{id}")]
-        public ActionResult DeleteCar(int id)
+        public ActionResult DeleteMotorbike(int id)
         {
             var dbMotorbike = _context.Motorbikes.FirstOrDefault(x => x.Id == id);
             if (dbMotorbike == null)
